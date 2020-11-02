@@ -1,0 +1,102 @@
+* {
+  font-family: "Itim", cursive;
+  justify-content: center;
+}
+
+body {
+  background-color: #fff4f0;
+}
+/* This is the header pic */
+header {
+  overflow: hidden;
+}
+
+header img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  color: #0f606b;
+  display: flex;
+  justify-content: center;
+  background: #ffc24a;
+  padding: 2em;
+}
+
+#list {
+  /* display: flex;
+  flex-direction: row; */
+  justify-content: center;
+}
+
+#list ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  color: #f47068;
+  font-weight: bold;
+}
+
+#gallery {
+  display: flex;
+  justify-content: center;
+}
+/* layout from W3 schools but edited */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sit next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+/* use smaller header img if screen is smaller than 600px */
+
+@media only screen and (max-device-width: 599px) {
+  header {
+    content: url("Fluffy\ Puppies\ Sm.jpg");
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 600px) {
+  header {
+    content: url("Fluffy Puppies.png");
+    width: 100%;
+  }
+}
